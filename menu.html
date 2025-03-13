@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="Menu" class="container mt-5">
+        <h2 class="text-center mb-4">Menu Kami</h2>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./node_modules/bootstrap/dist/img/americano.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Americano</h5>
+                      <p class="card-text">Rp. 15.000,00</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Pesan Sekarang</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./node_modules/bootstrap/dist/img/iced vanilla almond.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Americano</h5>
+                      <p class="card-text">Rp. 15.000,00</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Pesan Sekarang</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./node_modules/bootstrap/dist/img/latte machiato.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Iced Vanilla Almond</h5>
+                      <p class="card-text">Rp. 20.000,00</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Pesan Sekarang</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./node_modules/bootstrap/dist/img/mocha.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Latte Machino</h5>
+                      <p class="card-text">Rp. 20.000,00</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Pesan Sekarang</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pesan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+<!--            <span aria-hidden="true">&times;</span>-->
+          </button>
+        </div>
+        <div class="modal-body p-5">
+          <form action="">
+            <div class="nama-pelanggan row">
+                <label class="col-6" for="nama-pelanggan">Nama Pelanggan</label>
+                <input class="col-6" type="text" name="nama-pelanggan" id="nama-pelanggan" placeholder="Masukan nama Pelanggan" required>
+            </div>
+            </div>
+              <div class="nama-produk row mt-3">
+                  <label class="col-6" for="nama-produk">Nama Produk</label>
+                  <select class="col-6" name="name-produk" id="nama-produk">
+                      <option value="americano">Americano</option>
+                      <option value="iced-vanilla-almond">Iced Vanilla Almond</option>
+                      <option value="Latte machiato">Latte Machiato</option>
+                      <option value="mocha">Mocha</option>
+
+                  </select>
+              </div>
+              <div class="jumlah-pesanan row mt-3">
+                  <label class="col-6" for="jumlah-pesanan">Jumlah Pesanan</label>
+                  <input class="col-6" type="text" name="jumlah-pesanan" id="jumlah-pesanan" >
+              </div>
+              <div class="harga row mt-3">
+                  <label class="col-6" for="harga">harga</label>
+                  <input class="col-6" type="text" name="harga" id="harga" >
+              </div>
+          </form>
+          </div>
+<!--          fotter-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Pesan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
