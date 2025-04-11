@@ -24,3 +24,73 @@ body {
     font-size: 20px;
 }
 
+.footer {
+    background-color: #481e14;
+    height: 10vh;
+    color: white;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    color: white;
+  }
+  .btn-gradient {
+    background: linear-gradient(to right, #4b2c20, #d89b60);
+    color: white;
+    border: none;
+  }
+  .btn-gradient:hover {
+    opacity: 0.9;
+  }
+  .form-control::placeholder {
+    color: #ccc;
+  }
+  a {
+    color: #f5c996;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+.glass input[type="email"],
+.glass input[type="password"] {
+  background-color: rgba(255, 255, 255, 0.9); /* putih semi transparan */
+  border: none;
+  color: #333; /* warna teks input */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.glass input::placeholder {
+  color: #666; /* placeholder jadi lebih gelap dan jelas */
+}
+
+body.body-login {
+    background-image: url(node_modules/bootstrap/dist/img/cat.jpeg); /* Ganti dengan URL gambar kamu */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body.body-register {
+    background-image: url(/node_modules/bootstrap/dist/img/cat.jpeg); /* Gambar kopi */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+

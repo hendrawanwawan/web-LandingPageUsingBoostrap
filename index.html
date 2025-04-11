@@ -9,46 +9,127 @@
   </head>
   <body>
     <div class="container-home" id="home">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">Cafe Kita</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                  <li class="nav-Sitem">
+                    <a class="nav-link active" href="#menu">Menu</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
-          <div class="content px-3 d-flex flex-colum justify-content-center align-items-center">
+          <div class="content px-3 d-flex flex-column justify-content-center align-items-center">
             <h1>Selamat Datang di Cafe Kita</h1>
             <h5>Tempat terbaik untuk menikmati kopi dan makanan lezat</h5>
           </div>
+    </div>
+    <div id="menu" class="container mt-5">
+      <h2 class="text-center mb-4">Menu Kami</h2>
+      <!-- row -->
+      <div class="row">
+        <div class="col-md-3 mt-3">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="./node_modules/bootstrap/dist/img/americano.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Americano</h5>
+              <p class="card-text">Rp. 15.000,00</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="./node_modules/bootstrap/dist/img/iced vanilla almond.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iced Vanilla Almond</h5>
+              <p class="card-text">Rp. 20.000,00</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="./node_modules/bootstrap/dist/img/latte machiato.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Latte Machiato</h5>
+              <p class="card-text">Rp. 20.000,00</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="./node_modules/bootstrap/dist/img/mocha.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mocha</h5>
+              <p class="card-text">Rp. 20.000,00</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pesan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+              <!--            <span aria-hidden="true">&times;</span>-->
+            </button>
+          </div>
+          <div class="modal-body p-5">
+            <form action="">
+                <div class="nama-pelanggan row">
+                  <label class="col-6" for="nama-pelanggan">Nama Pelanggan</label>
+                  <input class="col-6" type="text" name="nama-pelanggan" id="nama-pelanggan" placeholder="Masukan nama Pelanggan" required>
+                </div>
+          <!-- </div> -->
+          <div class="nama-produk row mt-3">
+            <label class="col-6" for="nama-produk">Nama Produk</label>
+            <select class="col-6" name="nama-produk" id="nama-produk">
+              <option value="americano">Americano</option>
+              <option value="iced-vanilla-almond">Iced Vanilla Almond</option>
+              <option value="latte machiato">Latte Machiato</option>
+              <option value="mocha">Mocha</option>
+
+            </select>
+          </div>
+          <div class="jumlah-pesanan row mt-3">
+            <label class="col-6" for="jumlah-pesanan">Jumlah Pesanan</label>
+            <input class="col-6" type="number" name="jumlah-pesanan" id="jumlah-pesanan" >
+          </div>
+          <div class="harga row mt-3">
+            <label class="col-6" for="harga">harga</label>
+            <input class="col-6" type="number" name="harga" id="harga" >
+          </div>
+          </form>
+        </div>
+        <!--          fotter-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Pesan</button>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    
+    <div class="footer mt-5 d-flex align-items-center justify-content-center">
+      <h6>Copyright &copy 2025</h6>
     </div>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
